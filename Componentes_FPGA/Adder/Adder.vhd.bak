@@ -1,0 +1,7 @@
+entity Adder is
+end entity;
+
+architecture arch of Adder is
+begin
+
+end;

@@ -1,0 +1,7 @@
+entity look_ahead_carry_topology
+end entity;
+
+architecture arch of look_ahead_carry_topology is
+begin
+
+end arch;

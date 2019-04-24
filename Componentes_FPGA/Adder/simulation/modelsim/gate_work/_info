@@ -1,0 +1,83 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\EE\Sistemas Digitais\Adder\simulation\modelsim
+Eadder
+Z1 w1555998012
+Z2 DPx4 ieee 16 vital_primitives 0 22 9W@YP9_VCb?_GCJ8e:;YQ0
+Z3 DPx9 cycloneii 19 cycloneii_atom_pack 0 22 Oi3I0k`LZ6YG;P<IP9P3W1
+Z4 DPx4 ieee 12 vital_timing 0 22 7h8zz2S4HVg:a;2TBMI[j1
+Z5 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z6 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z7 DPx9 cycloneii 20 cycloneii_components 0 22 0WXB<Sgk6hOd5>ljP5KG63
+Z8 dE:\EE\Sistemas Digitais\Adder\simulation\modelsim
+Z9 8Adder.vho
+Z10 FAdder.vho
+l0
+L34
+VXagAe>1;nB=Un7O2<zFRj2
+Z11 OV;C;10.1d;51
+31
+Z12 !s108 1555998027.367000
+Z13 !s90 -reportprogress|300|-93|-work|work|Adder.vho|
+Z14 !s107 Adder.vho|
+Z15 o-93 -work work -O0
+Z16 tExplicit 1
+!s100 5^aP:XbMk_JObNoKI5o9<2
+!i10b 1
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 5 adder 0 22 XagAe>1;nB=Un7O2<zFRj2
+l114
+L73
+V3OnW;ciSJeG[^j`ic8>Nn2
+R11
+31
+R12
+R13
+R14
+R15
+R16
+!s100 SWZc:XBLP5A>LXNS:YV8[3
+!i10b 1
+Etestbench
+Z17 w1555997934
+R5
+R6
+R8
+Z18 8E:/EE/Sistemas Digitais/Adder/testbench.vhd
+Z19 FE:/EE/Sistemas Digitais/Adder/testbench.vhd
+l0
+L4
+Vj12`I@39j>z17?EG@z2dP0
+!s100 fIY3L?_lBfDFZ=DHe135G1
+R11
+31
+!i10b 1
+Z20 !s108 1555998028.215000
+Z21 !s90 -reportprogress|300|-93|-work|work|E:/EE/Sistemas Digitais/Adder/testbench.vhd|
+Z22 !s107 E:/EE/Sistemas Digitais/Adder/testbench.vhd|
+R15
+R16
+Aarch
+R5
+R6
+DEx4 work 9 testbench 0 22 j12`I@39j>z17?EG@z2dP0
+l26
+L7
+V7<B=;]ZY?H[chz@7L_o9z2
+!s100 oTToeRFbfkg=bjakVTOK23
+R11
+31
+!i10b 1
+R20
+R21
+R22
+R15
+R16

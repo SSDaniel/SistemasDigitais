@@ -1,0 +1,53 @@
+# Reading C:/altera/13.0/modelsim_ase/tcl/vsim/pref.tcl 
+# do Adder_run_msim_gate_vhdl.do 
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Copying C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {Adder.vho}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package cycloneii_atom_pack
+# -- Loading package cycloneii_components
+# -- Compiling entity Adder
+# -- Compiling architecture structure of Adder
+# 
+# vcom -93 -work work {E:/EE/Sistemas Digitais/Adder/testbench.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity testbench
+# -- Compiling architecture arch of testbench
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -sdftyp /NA=Adder_vhd.sdo -L cycloneii -L gate_work -L work -voptargs="+acc"  testbench
+# vsim +transport_int_delays +transport_path_delays -L cycloneii -L gate_work -L work -voptargs=\"+acc\" -sdftyp /NA=Adder_vhd.sdo -t 1ps testbench 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.testbench(arch)
+# SDF 10.1d Compiler 2012.11 Nov  2 2012
+# 
+# ** Warning: (vsim-3473) Component instance "coiso : ripple_carry_adder_sub" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench File: E:/EE/Sistemas Digitais/Adder/testbench.vhd
+# Loading instances from Adder_vhd.sdo
+# ** Error: (vsim-SDF-3250) Adder_vhd.sdo(0): Failed to find INSTANCE '/NA'.
+# 
+# ** Error: (vsim-SDF-3894) : Errors occured in reading and resolving instances from compiled SDF file(s).
+# 
+# ** Error: (vsim-SDF-3250) Adder_vhd.sdo(0): Failed to find INSTANCE '/NA'.
+# 
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./Adder_run_msim_gate_vhdl.do PAUSED at line 12
