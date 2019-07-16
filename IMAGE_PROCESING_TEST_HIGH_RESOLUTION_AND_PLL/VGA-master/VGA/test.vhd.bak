@@ -1,0 +1,25 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity test is
+end entity;
+
+architecture test of testbench is
+component VGA IS
+PORT(
+	CLOCK_24: IN STD_LOGIC_VECTOR(1 downto 0);
+	VGA_HS,VGA_VS:OUT STD_LOGIC;
+	SW: STD_LOGIC_VECTOR(1 downto 0);
+	KEY: STD_LOGIC_VECTOR(3 DOWNTO 0);
+	VGA_R,VGA_B,VGA_G: OUT STD_LOGIC_VECTOR(3 downto 0)
+	);
+END component;
+begin
+teste: VGA port map(CLOCK_24,VGA_HS,VGA_VS,);
+
+
+
+
+end component;
+end architecture;
