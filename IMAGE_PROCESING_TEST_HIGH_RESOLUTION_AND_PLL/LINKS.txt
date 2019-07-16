@@ -1,0 +1,4 @@
+https://www.instructables.com/id/Image-from-FPGA-to-VGA/
+https://www.youtube.com/watch?v=WK5FT5RD1sU
+https://www.fpga4student.com/2018/08/how-to-read-image-in-vhdl.html
+http://tinyvga.com/vga-timing
