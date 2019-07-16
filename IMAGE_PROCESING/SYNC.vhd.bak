@@ -1,0 +1,68 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+use work.my.all;
+
+ENTITY SYNC IS
+PORT(
+CLK: IN STD_LOGIC;
+HSYNC: OUT STD_LOGIC;
+VSYNC: OUT STD_LOGIC;
+R: OUT STD_LOGIC_VECTOR(3 downto 0);
+G: OUT STD_LOGIC_VECTOR(3 downto 0);
+B: OUT STD_LOGIC_VECTOR(3 downto 0);
+);
+END SYNC;
+
+
+ARCHITECTURE MAIN OF SYNC IS
+
+
+-----VGA Signal 640 x 480 @ 60 Hz Industry standard timing 25 MHz clock
+SIGNAL RGB: STD_LOGIC_VECTOR(3 downto 0);
+SIGNAL HPOS: INTEGER RANGE 0 TO 800:=0;
+SIGNAL VPOS: INTEGER RANGE 0 TO 525:=0;
+
+
+BEGIN
+
+
+--
+ PROCESS(CLK)
+ BEGIN
+IF(CLK'EVENT AND CLK='1')THEN
+	IF(HPOS<800)THEN
+			R<=("1011");
+	      G<=("1000");
+	      B<=("1001");
+		HPOS<=HPOS+1;
+		ELSE
+		HPOS<=0;
+		  IF(VPOS<525)THEN
+			  VPOS<=VPOS+1;
+			  ELSE
+			  VPOS<=0; 
+		  END IF;
+	END IF;
+	
+   IF((HPOS>0 AND HPOS<408) OR (VPOS>0 AND VPOS<42))THEN
+	R<=(others=>'0');
+	G<=(others=>'0');
+	B<=(others=>'0');
+	END IF;
+	
+   IF(HPOS>16 AND HPOS<112)THEN----HSYNC
+	   HSYNC<='0';
+	ELSE
+	   HSYNC<='1';
+	END IF;
+	
+   IF(VPOS>0 AND VPOS<12)THEN----------vsync
+	   VSYNC<='0';
+	ELSE
+	   VSYNC<='1';
+	END IF;
+	
+ END IF;
+ END PROCESS;
+ END MAIN;
