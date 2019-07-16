@@ -1,2 +1,2 @@
-# SistemasDigitais
-Projetos de circuitos digitais desenvolvidos no Quartus II 13.0 em VHDL.
+# DIGITAL SYSTEMS
+Projects of Digital Systems, developed in QUARTUS 13.0 SP1 to Altera DE1/DE2
